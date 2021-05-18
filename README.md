@@ -9,9 +9,11 @@ $ git clone [https://github.com/hakimel/reveal.js.git](https://github.com/hakime
 $ cd reveal.js && npm install
 4. Serve the presentation and monitor source files for changes
 $ npm start
-
-5) Open [http://localhost:8000](http://localhost:8000/) to view your presentation
+5 Open [http://localhost:8000](http://localhost:8000/) to view your presentation
 
 - **References**
     [https://revealjs.com/#/5/0/0](https://revealjs.com/#/5/0/0)
     [https://zhuanlan.zhihu.com/p/55157288](https://zhuanlan.zhihu.com/p/55157288)
+
+## Access to the Slides:
+https://s10143806h.github.io/test_reveal/index.html
