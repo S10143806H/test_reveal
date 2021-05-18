@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<!-- 所有的幻灯片都放在一个类为slides的div中 -->
+		<div class="slides">
+			<!-- 每一个<section>块都生成一张单独ppt -->
+			<!-- 第一页 -->
+			<section>
+				<!-- ppt标题 -->
+				<h1>Zoom使用相關</h1>
+				<!-- ppt正文 -->
+				<p>
+					<small>Presented by <a href="">Zhu Qi</a></small>
+				</p>
+			</section>
+
+			<!-- 第二页 -->
+			<section>
+				<!-- section中还可以包含section，放映的方式为向下放映 -->
+				<section>
+					<h2>Hello There</h2>
+					<!-- fragment类表示分条显示，当键盘按下?键时触发 -->
+					<p class="fragment">Today, we are gonna talk about the jQuery.</p>
+					<!-- 添加一个图片链接 -->
+					<a class="fragment" href="http://jquery.com/download/"><img width="240" height="180"
+							data-src="images/jquery_logo.gif" alt="jquery_logo"></a>
+				</section>
+				<!-- 通过data-background熟悉可以设置幻灯片的背景颜色或者图片，甚至可以使用视频当作背景 -->
+				<section data-background="#dddddd">
+					<h2>But then, Believe me...</h2>
+					<p class="fragment">You need some HTML,CSS and JavaScript skills to be able to use jQuery
+						effectively.
+				</section>
+			</section>
+			<!-- 第三頁 -->
+			<section data-markdown>
+				## 震惊！国内某数字消费资讯网站竟提供这种服务
+
+				* 🔧 效率工具推荐 & 生产力技巧
+
+				* 💰 这些产品值得买
+
+				* 🔭 这个技术你会懂
+
+				* 👍 什么是最好的？
+
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+	<script type="text/javascript">
+		// 初始化页面
+		Reveal.initialize({
+			controls: true,		// 是否显示左下角的控制键，默认为true
+			progress: true,		// 是否显示进度条，默认为true
+			center: true,		// 是否在中间显示，默认为true
+			// transition为页之间的切换动画，默认为slide，即水平滑动，这里我们改成zoom缩放试试
+			transition: 'zoom', // none/fade/slide(default)/convex/concave/zoom
+		});
+	</script>
+</body>
+
+</html>
